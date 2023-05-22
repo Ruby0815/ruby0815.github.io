@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#popupContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+
+#closeButton {
+  margin-top: 10px;
+}
+
+</style>
+</head>
+<body>
+    <button id="popupButton">Click Me</button>
+
+<div id="popupOverlay">
+  <div id="popupContent">
+    <h2>photocredit</h2>
+    <p>Here bakground image from unsplash by joshmad.</p>
+    <button id="closeButton">Close</button>
+  </div>
+</div>
+
+</body>
+<script>
+    var popupButton = document.getElementById('popupButton');
+var popupOverlay = document.getElementById('popupOverlay');
+var closeButton = document.getElementById('closeButton');
+
+// Open the popup when the button is clicked
+popupButton.addEventListener('click', function() {
+  popupOverlay.style.display = 'flex';
+});
+
+// Close the popup when the close button is clicked
+closeButton.addEventListener('click', function() {
+  popupOverlay.style.display = 'none';
+});
+
+</script>
+</html>

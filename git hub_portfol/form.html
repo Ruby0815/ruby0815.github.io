@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styleMini.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="welcome">
+        <h1 class="formheader">Contact me</h1>
+      </header>
+      <section id="contact">
+        <header>
+          <h1 >Please fill this form</h1>
+          <a href ="https://www.facebook.com/profile.php?id=100092508983549&mibextid=ZbWKwL">
+          <i class="fa-brands fa-square-facebook social-icon "></i>
+        </a>
+        <a href ="https://www.linkedin.com/in/ruby-verma-b59654210">
+          <i class="fa-brands fa-linkedin social-icon"></i></a>
+          
+          <a href ="#">
+          <i class="fa-brands fa-square-instagram social-icon"></i></a>
+          <a href ="#">
+          <i class="fa-brands fa-square-linkdin social-icon"></i></a>
+          <i class="fa-brands fa-square-whatsapp social-icon"></i>
+        </header>
+        <article id="welcomeMsg">
+          <p><strong>Hello!</strong> you can contact me here.</p>
+
+          <form id="contactForm">
+            <!------name------------>
+            <label for="name">
+              <i class="fa-solid fa-user"></i> Full Name
+            </label>
+            <input type="text" id="name" name="name" required />
+
+            <!-----------email------>
+            <label for="email"><i class="fa-solid fa-envelope"></i>Email</label>
+            <input type="email" id="email" name="email" required />
+
+            
+            <label for="message">
+              <i class="fa-solid fa-message"></i>
+              Message
+            </label>
+           <textarea name="message" id="message" required></textarea>
+
+
+            
+            <button type="submit" id="contactBtn">Send</button>
+
+            <aside>
+              <p>
+                By filling this form you can contact
+                <a href="#">Terms of service</a>, and
+                <a href="#">Privacy policy</a>
+              </p>
+            </aside>
+          </form>
+        </article>
+      </section>
+    </div>
+
+      </body> 
+  <script src="form1.js"></script>
+</html>
