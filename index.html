@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- link google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- link style css -->
+    <link rel="stylesheet" href="styleMini.css" />
+
+    <!-- dev -->
+
+    <!-- Material Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../img/logo.png" alt="logo-img" class="logo_img" />
+          <p>Portfolio</p>
+        </div>
+        <ul class="menu">
+          <li><a class="menuItem active" href="#">Home</a></li>
+          <li><a class="menuItem" href="#about1">About</a></li>
+          <li><a class="menuItem" href="#service1">service</a></li>
+          <li><a class="menuItem" href="#portfolio1">Portfolio</a></li>
+
+          <li>
+            <a class="menuItem" href="form.html" target="_blank">Contact</a>
+          </li>
+        </ul>
+
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ------------home ------------->
+      <div class="home">
+        <div class="home-text">
+          <h1>Hello</h1>
+          <h2>I am <span>Ruby Verma</span></h2>
+          <h2>I am webdeveloper and programmer</h2>
+        </div>
+
+        <div class="home-btn1">
+          <a href="form.html" target="_blank" class="home-btn1">contact Me</a>
+        </div>
+      </div>
+
+      <!-- --------------  about    ---------------- -->
+      <div class="about" id="about1">
+        <h1>About</h1>
+        <section class="projects">
+          <div class="project about_image">
+            <img src="../img/mypic1.jpg" alt="about" />
+            <!-- <h3>Project 1</h3> -->
+          </div>
+          <div class="project">
+            <p>
+              Hello, my name is Ruby Verma, and I am a dedicated web developer
+              and programmer based in California. With expertise in C, HTML,
+              CSS, and JavaScript, I possess a strong foundation in essential
+              programming languages like c. Additionally, I have hands-on
+              knoweledge working with frameworks such as Bootstrap and Onsen UI,
+              enabling me to create dynamic and visually appealing web
+              applications.
+            </p>
+          </div>
+          <div class="project">
+            <p>
+              Equipped with proficiency in GitHub, I am adept at collaborating
+              with teams and managing version control effectively. My passion
+              lies in crafting responsive and user-friendly web solutions that
+              address real-world challenges. As an enthusiastic developer, I am
+              constantly seeking fresh challenges and opportunities to expand my
+              knowledge and skills.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ----------------service--------------- -->
+
+      <section class="service" id="service1">
+        <h1>Sevices</h1>
+        <section class="service-content">
+          <section>
+            <h2>Webdeveloper</h2>
+            <div class="image">
+              <img src="../img/webdev.jpg" alt="web_img" class="web_img" />
+              <div class="content">
+                <h3>webdevloping</h3>
+                <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+              </div>
+              <p>
+                I strive to create visually appealing and interactive web
+                applications that provide an exceptional user experience.
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2>Programmer</h2>
+            <div class="image">
+              <img src="../img/prog1.jpg" alt="pro_img" class="pro_img" />
+              <div class="content">
+                <h3>programming</h3>
+                <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+              </div>
+
+              <p>
+                I am committed to writing clean and efficient code that solves
+                complex problems and delivers reliable software solutions.
+              </p>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section class="port" id="portfolio1">
+        <h1>portfolio</h1>
+        <h2>My Work</h2>
+      </section>
+      <section class="carousel">
+        <button class="carouselBtn leftBtn isHidden">
+          <i class="fa-solid fa-circle-arrow-left"></i>
+        </button>
+
+        <div class="carouselContainer">
+          <ul class="carouselItems">
+            <li class="carouselSlide currentSlide">
+              <h2>project1</h2>
+              <img src="../img/work1.png" alt="image description" />
+              <p>parallelX effect with javascript animation</p>
+            </li>
+            <li class="carouselSlide">
+              <h2>project 2</h2>
+              <img src="../img/work2.png" alt="image description" />
+              <p>Rock paper and scissors game with the help of javascript</p>
+            </li>
+            <li class="carouselSlide">
+              <h2>project 3</h2>
+              <img src="../img/work3.png" alt="image description" />
+              <p>First webpage of my my favourate book</p>
+            </li>
+            <li class="carouselSlide">
+              <h2>project 3</h2>
+              <img src="../img/work4.jpg" alt="image description" />
+              <p>Webpage of horn shark using Bootstrap</p>
+            </li>
+          </ul>
+        </div>
+        <button class="carouselBtn rightBtn">
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+
+        <nav class="carouselNav">
+          <button class="carouselIndicator currentSlide"></button>
+          <button class="carouselIndicator"></button>
+          <button class="carouselIndicator"></button>
+          <button class="carouselIndicator"></button>
+        </nav>
+      </section>
+    </main>
+
+    <!-- ---------------------------popup----------------- -->
+    <button id="popupButton" class="photo">Photo credit</button>
+
+    <div id="popupOverlay">
+      <div id="popupContent">
+        <h2>Photocredit</h2>
+        <h3>Special Thanks</h3>
+        <p>Bakground image from unsplash by Joshmad.</p>
+        <p>Webdeveloper image from unsplash by Sebastian-willius.</p>
+        <p>Pragrammer image from unsplash by James-harrison.</p>
+        <button id="closeButton">Close</button>
+      </div>
+    </div>
+
+    <!-- ------------------------footer-------------- -->
+    <footer class="footer">
+      <p>copyright &copy;2023</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
